@@ -191,6 +191,7 @@ class DrrnTrainer(Trainer):
                                                                        for info in infos],
                                                                    sample=True)
 
+
             # Get the actual next action string for each env
             action_strs = [
                 info['valid'][idx] for info, idx in zip(infos, action_idxs)
